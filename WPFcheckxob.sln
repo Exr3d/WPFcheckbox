@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFcheckxob", "WPFcheckxob\WPFcheckxob.csproj", "{11DCCC10-E1CC-4353-B254-0ADB5CA4ED36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11DCCC10-E1CC-4353-B254-0ADB5CA4ED36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11DCCC10-E1CC-4353-B254-0ADB5CA4ED36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11DCCC10-E1CC-4353-B254-0ADB5CA4ED36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11DCCC10-E1CC-4353-B254-0ADB5CA4ED36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D97B59F4-9679-4A8F-AF80-F41EDA80EC08}
+	EndGlobalSection
+EndGlobal

@@ -15,14 +15,17 @@ using System.Windows.Shapes;
 
 namespace WPFcheckxob
 {
+    
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        String lista = "";
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void OnlyCzerwone(object sender, RoutedEventArgs e)
@@ -94,6 +97,8 @@ namespace WPFcheckxob
                 n2.IsEnabled = true;
                 n3.IsEnabled = true;
                 n4.IsEnabled = true;
+
+            lista = "";
         }
 
         private void AllCzerwoneOff(object sender, RoutedEventArgs e)
@@ -102,6 +107,8 @@ namespace WPFcheckxob
             c2.IsChecked = false;
             c3.IsChecked = false;
             c4.IsChecked = false;
+
+            lista = "";
         }
 
         private void AllYellow(object sender, RoutedEventArgs e)
@@ -118,6 +125,9 @@ namespace WPFcheckxob
             y2.IsChecked = false;
             y3.IsChecked = false;
             y4.IsChecked = false;
+
+
+            lista = "";
         }
 
         private void OnlyYellow(object sender, RoutedEventArgs e)
@@ -179,6 +189,8 @@ namespace WPFcheckxob
             n2.IsEnabled = true;
             n3.IsEnabled = true;
             n4.IsEnabled = true;
+
+            lista = "";
         }
 
         private void AllZielone(object sender, RoutedEventArgs e)
@@ -195,6 +207,8 @@ namespace WPFcheckxob
             z2.IsChecked = false;
             z3.IsChecked = false;
             z4.IsChecked = false;
+
+            lista = "";
         }
 
         private void OnlyZielone(object sender, RoutedEventArgs e)
@@ -256,6 +270,8 @@ namespace WPFcheckxob
             n2.IsEnabled = true;
             n3.IsEnabled = true;
             n4.IsEnabled = true;
+
+            lista = "";
         }
 
         private void AllNiebieskie(object sender, RoutedEventArgs e)
@@ -272,6 +288,8 @@ namespace WPFcheckxob
             n2.IsChecked = false;
             n3.IsChecked = false;
             n4.IsChecked = false;
+
+            lista = "";
         }
 
         private void OnlyNiebieskie(object sender, RoutedEventArgs e)
@@ -333,6 +351,79 @@ namespace WPFcheckxob
             z2.IsEnabled = true;
             z3.IsEnabled = true;
             z4.IsEnabled = true;
+
+            lista = "";
+        }
+
+        private void DisplayChecked(object sender, RoutedEventArgs e)
+        {
+            lista = "";
+            if (c1.IsChecked == true)
+            {
+                lista = lista +", " +c1.Content.ToString();
+            }
+            if (c2.IsChecked == true)
+            {
+                lista = lista + ", " + c2.Content.ToString();
+            }
+            if (c3.IsChecked == true)
+            {
+                lista = lista + ", " + c3.Content.ToString();
+            }
+            if (c4.IsChecked == true)
+            {
+                lista = lista + ", " + c4.Content.ToString();
+            }
+            if (y1.IsChecked == true)
+            {
+                lista = lista + ", " + y1.Content.ToString();
+            }
+            if (y2.IsChecked == true)
+            {
+                lista = lista + ", " + y2.Content.ToString();
+            }
+            if (y3.IsChecked == true)
+            {
+                lista = lista + ", " + y3.Content.ToString();
+            }
+            if (y4.IsChecked == true)
+            {
+                lista = lista + ", " + y4.Content.ToString();
+            }
+            if (z1.IsChecked == true)
+            {
+                lista = lista + ", " + z1.Content.ToString();
+            }
+            if (z2.IsChecked == true)
+            {
+                lista = lista + ", " + z2.Content.ToString();
+            }
+            if (z3.IsChecked == true)
+            {
+                lista = lista + ", " + z3.Content.ToString();
+            }
+            if (z4.IsChecked == true)
+            {
+                lista = lista + ", " + z4.Content.ToString();
+            }
+            if (n1.IsChecked == true)
+            {
+                lista = lista + ", " + n1.Content.ToString();
+            }
+            if (n2.IsChecked == true)
+            {
+                lista = lista + ", " + n2.Content.ToString();
+            }
+            if (n3.IsChecked == true)
+            {
+                lista = lista + ", " + n3.Content.ToString();
+            }
+            if (n4.IsChecked == true)
+            {
+                lista = lista + ", " + n4.Content.ToString();
+            }
+
+            MessageBox.Show("Twoje wybrane owoce: " + lista);
         }
     }
 }

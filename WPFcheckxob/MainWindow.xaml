@@ -53,6 +53,7 @@
             <CheckBox Margin="0,10,0,0" Checked="OnlyNiebieskie" Unchecked="OnlyNiebieskieOff">Tylko niebieskie</CheckBox>
 
         </StackPanel>
+        <Button Margin="223,205,655,549" Click="DisplayChecked">Wyswietl</Button>
 
     </Grid>
 
